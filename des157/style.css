@@ -1,0 +1,98 @@
+ol {
+    list-style: none;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    max-width: 1366px;
+    font-family: "Karla", sans-serif;
+}
+
+/* Banner things */
+#banner {
+    margin: auto;
+    width: 1100px;
+    height: 250px;
+    background-color: #857ede;
+}
+
+#banner:hover #top {
+    height: 0;
+}
+
+#banner:hover #bottom {
+    height: 0;
+}
+
+#banner:hover #middle {
+    height: 250px;
+}
+
+#top {
+    width: 1100px;
+    height: 125px;
+    background-color: #98abf5;
+    transition: all 2s;
+}
+
+#middle {
+    width: 1100px;
+    height: 0px;
+    transition: all 2s;
+}
+
+#bottom {
+    width: 1100px;
+    height: 125px;
+    background-color: #7eabde;
+    transition: all 2s;
+}
+
+.letter {
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    position: relative;
+
+    animation-name: flying;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes flying {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 1100px;
+    }
+}
+
+.column {
+    display: inline-grid;
+    padding: 2%;
+    margin: 2%;
+    width: 25%;
+    height: auto;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Link things */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: darkgray;
+}
+
+a:hover {
+    color: gray;
+}
