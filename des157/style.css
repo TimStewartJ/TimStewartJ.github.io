@@ -3,18 +3,57 @@ ol {
 }
 
 body {
+    /* background-color: #6e9ceb; */
     margin: auto;
     width: 100%;
     max-width: 1366px;
     font-family: "Karla", sans-serif;
+    /* animation: changingbackground 10s infinite;*/
+}
+
+@keyframes changingbackground {
+    0% {
+        background-color: hsl(0, 100%, 73%);
+    }
+    50% {
+        background-color: hsl(180, 100%, 73%);
+    }
+    100% {
+        background-color: hsl(0, 100%, 73%);
+    }
 }
 
 /* Banner things */
 #banner {
     margin: auto;
+    position: relative;
     width: 1100px;
     height: 250px;
-    background-color: #857ede;
+    /*background-color: #d96f5b;*/
+    overflow: hidden;
+    animation: changingbackground 5s infinite;
+    animation-play-state: running;
+}
+
+#banner:hover {
+    animation-play-state: paused;
+}
+
+#banner h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: auto;
+    color: white;
+}
+
+#banner a {
+    color: white;
+}
+
+#banner a:hover {
+    color: gray;
 }
 
 #banner:hover #top {
@@ -25,47 +64,97 @@ body {
     height: 0;
 }
 
-#banner:hover #middle {
-    height: 250px;
+#banner:hover #left {
+    width: 0;
+}
+
+#banner:hover #right {
+    width: 0;
+}
+
+#banner:hover #circle {
+    width: 0;
+    height: 0;
+}
+
+#banner:hover #message {
+    left: -1100px;
 }
 
 #top {
+    position: absolute;
     width: 1100px;
     height: 125px;
-    background-color: #98abf5;
-    transition: all 2s;
-}
-
-#middle {
-    width: 1100px;
-    height: 0px;
+    background-color: white; /*f868f0*/
     transition: all 2s;
 }
 
 #bottom {
+    position: absolute;
+    bottom: 0px;
     width: 1100px;
     height: 125px;
-    background-color: #7eabde;
+    background-color: white;
     transition: all 2s;
 }
 
-.letter {
-    width: 50px;
-    height: 25px;
-    background-color: black;
-    position: relative;
-
-    animation-name: flying;
-    animation-duration: 5s;
-    animation-timing-function: linear;
+#left {
+    position: absolute;
+    width: 550px;
+    height: 250px;
+    background-color: #d95b93;
+    transition: all 2s;
 }
 
-@keyframes flying {
+#right {
+    position: absolute;
+    right: 0px;
+    width: 550px;
+    height: 250px;
+    background-color: #d95b93;
+    transition: all 2s;
+}
+
+#circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 1100px;
+    height: 1100px;
+    background-color: #f07370; /*f07370*/
+    transition: all 2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#message {
+    position: absolute;
+    color: black;
+    top: 100px;
+    left: 100px;
+    transition: all 2s;
+    font-size: 2em;
+    overflow: hidden;
+    width: 450px;
+    animation: dot 2s infinite steps(1, end);
+    height: 1em;
+}
+
+@keyframes dot {
     0% {
-        left: 0px;
+        width: 410px;
+    }
+    25% {
+        width: 420px;
+    }
+    50% {
+        width: 435px;
+    }
+    75% {
+        width: 450px;
     }
     100% {
-        left: 1100px;
+        width: 410px;
     }
 }
 
@@ -75,7 +164,7 @@ body {
     margin: 2%;
     width: 25%;
     height: auto;
-    background-color: blanchedalmond;
+    /*background-color: lightgray;*/
     border-radius: 25px;
 }
 
