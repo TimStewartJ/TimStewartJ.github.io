@@ -158,6 +158,15 @@ body {
     }
 }
 
+header {
+    margin: 30px;
+}
+
+main {
+    justify-content: space-evenly;
+    min-width: 800px;
+}
+
 .column {
     display: inline-grid;
     padding: 2%;
@@ -173,15 +182,16 @@ footer {
 }
 
 /* Link things */
+/* Maybe make hover more obvious */
 a {
     text-decoration: none;
 }
 
 a:link,
 a:visited {
-    color: darkgray;
+    color: gray;
 }
 
 a:hover {
-    color: gray;
+    color: darkgray;
 }
