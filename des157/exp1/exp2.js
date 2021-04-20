@@ -20,7 +20,11 @@
         let input = prompt("What service would you like?");
         input = input.toLowerCase();
 
-        if (!(input in services)) {
+        serviceHandler(input);
+    });
+
+    let serviceHandler = (service) => {
+        if (!(service in services)) {
             alert("That is not one of the services, please try again!");
         } else {
             if (first) {
@@ -31,17 +35,20 @@
                 serviceAddon.appendChild(serviceText);
                 invoice.appendChild(serviceAddon);
                 first = false;
-
                 total.style.display = "";
             }
-            let serviceAddon = document.createElement("p");
-            let serviceText = document.createTextNode(
-                "Service: " + input + ", $" + services[input]
-            );
-            serviceAddon.appendChild(serviceText);
-            invoice.appendChild(serviceAddon);
-            price += services[input];
+            invoice.appendChild(serviceText(service));
+            price += services[service];
             total.innerHTML = "Total price: $" + price;
         }
-    });
+    };
+
+    let serviceText = (service) => {
+        let serviceAddon = document.createElement("p");
+        let serviceText = document.createTextNode(
+            "Service: " + service + ", $" + services[service]
+        );
+        serviceAddon.appendChild(serviceText);
+        return serviceAddon;
+    };
 })();

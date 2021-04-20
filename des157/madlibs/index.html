@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="vieport" content="width=device-width, initial-scale=1.0" />
+        <title>Build a Mad Lib Script</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Build a Mad Lib Script</h1>
+        </header>
+        <main>
+            <form id="myForm">
+                <label for="noun01">Provide a Noun</label>
+                <input type="text" id="noun01" required />
+
+                <label for="noun02">Provide a Noun</label>
+                <input type="text" id="noun02" required />
+
+                <label for="adj">Provide an Adjective</label>
+                <input type="text" id="adj" required />
+
+                <label for="verb">Provide a Verb</label>
+                <input type="text" id="verb" required />
+
+                <input type="submit" id="submit" value="Send" />
+            </form>
+
+            <article id="madlib"></article>
+        </main>
+        <footer></footer>
+    </body>
+</html>

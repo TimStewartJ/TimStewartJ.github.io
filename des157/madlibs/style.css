@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+#submit {
+    display: block;
+    margin: auto
+}
