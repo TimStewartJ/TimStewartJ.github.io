@@ -18,6 +18,7 @@ main {
     background-image: url("waves2.png");
     background-repeat: repeat-x;
     background-color: #018aff;
+    min-height: calc(900px + 4em);
     height: 110vh;
     overflow: hidden;
     padding-top: 50px;
@@ -119,7 +120,7 @@ a:hover {
 
 @keyframes slideinframes {
     0% {top: 100vh;}
-    100% {top: -900px;}
+    100% {top: calc(-900px - 4em);}
 }
 
 #madlib {

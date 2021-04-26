@@ -1,5 +1,6 @@
 (function () {
     "use strict";
+    console.log("reading js");
 
     const myForm = document.querySelector("body");
     const madlib = document.querySelector("#madlib");
