@@ -1,13 +1,146 @@
 body {
+    background-color: #badeff;
+    margin: 0;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    background-image: url("waves2.png");
+    background-repeat: repeat-x;
+    background-color: #018aff;
+    height: 110vh;
+    overflow: hidden;
+    padding-top: 50px;
+    animation: waves 5s ease-in-out infinite;
+}
+
+footer {
+    background-color: #018aff;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 0 0 1em 0;
+    color: #f4f9e9;
+}
+
+a {
+    color: #f4f9e9;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #153243;
+}
+
+@keyframes waves {
+    0% {background-position-x: 0;}
+    50% {background-position-x: 100px;}
+    100% {background-position-x: 0px;}
+}
+
+#cloud {
+    position: relative;
+    background-image: url("cloud2.png");
+    width: 750px;
+    height: 100px;
+    padding-top: 55px;
+    margin: auto;
+    animation: cloudfloat 3s ease-in-out infinite;
+}
+
+#cloud h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+@keyframes cloudfloat {
+    0% {top: 0;}
+    50% {top: 20px;}
+    100% {top: 0;}
+}
+
+.container {
+    position: relative;
+    color: #f4f9e9;
+    max-width: 700px;
+    margin: auto;
+    padding: 1.5em 2em 1.5em 2em;
+    background-color: #153243;
+    border-radius: 10px;
+}
+
+.container h2 {
+    font-size: 1.7em;
+}
+
+.container h3 {
+    font-size: 1em;
+}
+ 
+#input {
+    height: 900px;
+}
+
+.slideout {
+    animation: slideoutframes 3s forwards;
+}
+
+@keyframes slideoutframes {
+    0% {top: 0;}
+    100% {top: 200vh;}
+}
+
+#output {
+    top: 200vh;
+    color: #f4f9e9;
+    /* height: 700px; */
+}
+
+#outputContainer h2 {
+    font-size: 1.7em;
+}
+
+#outputContainer h3 {
+    font-size: 1em;
+}
+
+.slidein {
+    animation: slideinframes 3s forwards;
+}
+
+@keyframes slideinframes {
+    0% {top: 100vh;}
+    100% {top: -900px;}
+}
+
+#madlib {
+    line-height: 2;
 }
 
 label {
     display: block;
+    font-size: 0.8em;
+    margin-left: 20px;
 }
 
 input {
-    margin-bottom: 10px;
+    margin: 10px 0px 20px 20px;
+    border: 1px solid #eef0eb;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #284b63;
+    color: #f4f9e9;
+    font-size: 0.7em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #submit {

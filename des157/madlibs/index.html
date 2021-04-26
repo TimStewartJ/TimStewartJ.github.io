@@ -3,33 +3,70 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="vieport" content="width=device-width, initial-scale=1.0" />
-        <title>Build a Mad Lib Script</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Mad Libs in the Sea</title>
+        <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
     <body>
         <header>
-            <h1>Build a Mad Lib Script</h1>
+            <div id="cloud">
+                <h1>mad libs in the sea</h1>
+            </div>
         </header>
         <main>
-            <form id="myForm">
-                <label for="noun01">Provide a Noun</label>
-                <input type="text" id="noun01" required />
+            <div id="input" class="container">
+                <h2>ahoy!</h2>
+                <h3>
+                    Fill these out for a quick and fun pirate themed mad libs!
+                </h3>
+                <form id="myForm">
+                    <label for="name01">Provide a Name</label>
+                    <input type="text" id="name01" />
 
-                <label for="noun02">Provide a Noun</label>
-                <input type="text" id="noun02" required />
+                    <label for="noun01">Provide a Noun</label>
+                    <input type="text" id="noun01" />
 
-                <label for="adj">Provide an Adjective</label>
-                <input type="text" id="adj" required />
+                    <label for="adj01">Provide an Adjective</label>
+                    <input type="text" id="adj01" />
 
-                <label for="verb">Provide a Verb</label>
-                <input type="text" id="verb" required />
+                    <label for="verb01">Provide a Verb</label>
+                    <input type="text" id="verb01" />
 
-                <input type="submit" id="submit" value="Send" />
-            </form>
+                    <label for="adj02">Provide an Adjective</label>
+                    <input type="text" id="adj02" />
 
-            <article id="madlib"></article>
+                    <label for="noun02">Provide a Tool</label>
+                    <input type="text" id="noun02" />
+
+                    <label for="adj03">Provide an Adjective</label>
+                    <input type="text" id="adj03" />
+
+                    <label for="noun03">Provide a Plural Noun</label>
+                    <input type="text" id="noun03" />
+
+                    <input type="submit" id="submit" value="Send" />
+                </form>
+            </div>
+            <div id="output" class="container">
+                <h2>Your madlib:</h2>
+                <article id="madlib"></article>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <a
+                href="mailto:&#116;&#105;&#109;&#115;&#116;&#101;&#119;&#097;&#114;&#116;&#106;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                >contact me</a
+            >
+            |
+            <a
+                href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ftimstewartj.github.io/des157/madlibs%2F"
+                >valid HTML</a
+            >
+            |
+            <a
+                href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftimstewartj.github.io/des157/madlibs%2F"
+                >valid CSS</a
+            >
+        </footer>
     </body>
 </html>
