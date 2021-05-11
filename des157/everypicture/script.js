@@ -30,7 +30,7 @@
                 }
                 break;
             case 1:
-                image.setAttribute("src", "images/other.PNG");
+                image.setAttribute("src", "images/other.png");
                 frontInfoBoxes.classList.add("disabled");
                 frontInfoBoxes.classList.remove("enabled");
                 backInfoBoxes.classList.add("disabled");
@@ -38,11 +38,11 @@
                 break;
             case 2:
                 if (!backCover) {
-                    image.setAttribute("src", "images/backnocover.PNG");
+                    image.setAttribute("src", "images/backnocover.png");
                     backInfoBoxes.classList.add("enabled");
                     backInfoBoxes.classList.remove("disabled");
                 } else {
-                    image.setAttribute("src", "images/backcover.PNG");
+                    image.setAttribute("src", "images/backcover.png");
                     backInfoBoxes.classList.add("disabled");
                     backInfoBoxes.classList.remove("enabled");
                 }
