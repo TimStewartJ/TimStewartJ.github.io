@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game of PIG</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+        />
+        <link href="styles.css" rel="stylesheet" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <img id="title" src="title.png" />
+        <!-- <h1>Game of PIG</h1> -->
+
+        <div id="gamecontrol">
+            <h2>Start a Game</h2>
+            <button id="startgame">
+                Randomly Pick the First Player, and Start the Game
+            </button>
+        </div>
+
+        <div id="players">
+            <div id="p1" class="player">
+                <p id="score1" class="score">score: 0</p>
+                <img src="p1.png" />
+            </div>
+            <div id="dice">
+                <!-- <img class="dice" src="1die.jpg"/>
+                <img class="dice" src="1die.jpg"/> -->
+            </div>
+            <div id="p2" class="player">
+                <p id="score2" class="score">score: 0</p>
+                <img src="p2.png" />
+            </div>
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </body>
+</html>
