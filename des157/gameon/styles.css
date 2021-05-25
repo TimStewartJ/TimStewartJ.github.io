@@ -1,6 +1,6 @@
 @font-face {
     font-family: "sweet-purple";
-    src: url("sweet-purple.ttf");
+    src: url("media/sweet-purple.ttf");
 }
 
 body {
@@ -8,7 +8,7 @@ body {
     color: #333;
     padding: 50px;
     line-height: 1.5em;
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     width: 1266px;
