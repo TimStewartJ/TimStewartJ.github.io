@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>User Test Results</title>
+        <!-- normalize style sheet-->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+        />
+        <!-- Google fonts go here -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Merriweather:wght@700&family=Mukta:wght@200&display=swap"
+            rel="stylesheet"
+        />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1>User Test Results</h1>
+            </header>
+
+            <main>
+                <p>
+                    I found this user test to be incredibly helpful. When making
+                    anything that ultimately goes into a user's hands, it's too
+                    easy to get caught up in one's own design. Seeing how other
+                    people interacted with and used my site was eye-opening.
+                </p>
+                <p>
+                    One thing I noticed right off the bat was users' confusion
+                    with the phrase to try hovering over the numbers. This is
+                    because the numbers are not initially visible. The user has
+                    to first take off the cover. This makes me consider the text
+                    I have under the title and potentially switching the default
+                    to be covers off instead.
+                </p>
+                <figure>
+                    <img src="numbersconfusion.gif" />
+                    <figcaption>Confusion of where the numbers are.</figcaption>
+                </figure>
+                <p>
+                    Users also tended to try to click the remove cover button on
+                    the second image, even though the button was clearly
+                    disabled. I'll have to experiment with other methods of
+                    making it more obvious that there is no cover to take off
+                    for that particular perspective.
+                </p>
+                <figure>
+                    <img src="tryingremove.gif" />
+                    <figcaption>
+                        User tries to click remove cover button even when
+                        disabled.
+                    </figcaption>
+                </figure>
+                <p>
+                    Some other smaller comments I received were mentions of
+                    smaller improvments that could be made. One user said that
+                    they didn't even see the text under the title, even though
+                    it is a relatively important instruction. They said the
+                    large image draws the eyes from it. I could perhaps try
+                    using an overlay upon initial loading of the site, serving
+                    as both a welcome and a loading screen for all of the
+                    images.
+                </p>
+            </main>
+
+            <footer>
+                <a
+                    href="mailto:&#116;&#105;&#109;&#115;&#116;&#101;&#119;&#097;&#114;&#116;&#106;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                    >Contact Me</a
+                >
+                |
+                <a
+                    href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ftimstewartj.github.io/des157/final/usertest-results.html%2F"
+                    >Valid HTML 5</a
+                >
+                |
+                <a
+                    href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftimstewartj.github.io/des157/final/usertest-results.html%2F"
+                    >Valid CSS</a
+                >
+            </footer>
+        </div>
+    </body>
+</html>
