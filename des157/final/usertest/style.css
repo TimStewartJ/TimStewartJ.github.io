@@ -1,0 +1,174 @@
+body {
+    margin: auto;
+    max-width: 1366px;
+    min-width: 800px;
+    font-family: "Roboto", sans-serif;
+    background-color: #131112;
+    color: #eaefd3;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(247, 217, 199);
+    /* font-family: 'Lora', serif; */
+}
+
+#alert {
+    text-align: center;
+    color: #eaefd3;
+}
+
+.smallHeader {
+    font-size: 0;
+    margin-top: 30px;
+    transition: all 1s;
+}
+
+.bigHeader {
+    font-size: medium;
+    transition: all 1s;
+}
+
+#imgContainer {
+    position: relative;
+
+    /* display: block; */
+    margin: auto;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: #2e3035;
+    border-width: 0.5em;
+    background-color: beige;
+}
+
+#theImg {
+    max-width: 100%;
+}
+
+.imgSmall {
+    max-width: 800px;
+    transition: all 1s;
+}
+
+.imgBig {
+    max-width: 75%;
+    transition: all 1s;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: rgb(102, 61, 34);
+    font-size: 2em;
+    padding: 5px 15px 5px 15px;
+}
+
+button:disabled {
+    background-color: black;
+    color: gray;
+}
+
+button:hover:enabled {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#cover {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+}
+
+#expand {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+/* front overlay info box stuff */
+
+.frontOverlay {
+    position: absolute;
+}
+
+.backOverlay {
+    position: absolute;
+}
+
+#frontOverlay1 {
+    left: 22.4%;
+    top: 36%;
+}
+
+#frontOverlay2 {
+    left: 50.5%;
+    top: 47.7%;
+}
+
+#frontOverlay3 {
+    left: 61.7%;
+    top: 54%;
+}
+
+#backOverlay1 {
+    left: 36%;
+    top: 53%;
+}
+
+#backOverlay2 {
+    left: 62%;
+    top: 70%;
+}
+
+.enabledOverlay {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+}
+
+.disabledOverlay {
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    /* transition: 1s; */
+}
+
+.infobox {
+    border: solid;
+    border-radius: 1em;
+    border-color: #68422c;
+    background-color: #fff4d5;
+    border-width: 0.5em;
+    padding: 5px 5px 5px 5px;
+    /* margin: 0px 10px 0px 10px; */
+    /* width: 300px; */
+    color: #68422c;
+}
