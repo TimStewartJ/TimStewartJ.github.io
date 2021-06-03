@@ -31,22 +31,22 @@
     const expandButton = document.getElementById("expand");
     const expandIcon = document.getElementById("expandIcon");
 
-    let images = new Array();
-    let preload = () => {
-        //function to preload all images
-        let imagesrcs = [
-            "images/frontnocover.PNG",
-            "images/frontcover.PNG",
-            "images/backnocover.png",
-            "images/backcover.png",
-            "images/other.png",
-        ];
-        for (let i = 0; i < imagesrcs; i++) {
-            images[i] = new Image();
-            images[i].src = imagesrcs[i];
-        }
-    };
-    preload();
+    // let images = new Array();
+    // let preload = () => {
+    //     //function to preload all images
+    //     let imagesrcs = [
+    //         "images/frontnocover.PNG",
+    //         "images/frontcover.PNG",
+    //         "images/backnocover.png",
+    //         "images/backcover.png",
+    //         "images/other.png",
+    //     ];
+    //     for (let i = 0; i < imagesrcs; i++) {
+    //         images[i] = new Image();
+    //         images[i].src = imagesrcs[i];
+    //     }
+    // };
+    // preload();
 
     // preloader stuff
     window.addEventListener("load", function () {

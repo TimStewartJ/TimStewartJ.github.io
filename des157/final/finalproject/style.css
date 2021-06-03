@@ -12,6 +12,10 @@ h1 {
     color: beige;
 }
 
+#preloadimages {
+    background: url("images/backcover.png"),url("images/backnocover.png"),url("images/frontcover.PNG"),url("images/frontnocover.PNG"),url("images/other.png") no-repeat;
+}
+
 #alert {
     text-align: center;
     color: #eaefd3;
